@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuOpciones"
+        android:icon="@drawable/baseline_puntos_menu"
+        android:title=""
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/union_europea"
+                android:title="Union Europea"
+                />
+            <item
+                android:id="@+id/resto_de_paises"
+                android:title="Resto de Países"
+                />
+            <item
+                android:id="@+id/todos_los_paises"
+                android:title="Todos los países"
+                />
+        </menu>
+    </item>
+</menu>
+<!--Quitar de Themes en Values el .NoActionBar-->
