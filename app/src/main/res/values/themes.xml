@@ -3,27 +3,17 @@
     <style name="Base.Theme.PracticaExamen" parent="Theme.Material3.DayNight">
         <item name="android:textColorPrimary">@color/orange</item>
     </style>
-    <!-- Estilo específico para la Toolbar -->
-    <style name="ToolbarStyle" parent="Widget.Material3.Toolbar">
-        <!-- Cambia el fondo de la Toolbar al color deseado -->
-        <item name="android:background">@color/orange</item>
-        <!-- Establece el título de la Toolbar -->
-        <item name="android:title">Ejercicio Unidad 8</item>
-        <!-- Establece el color del texto de la Toolbar -->
-        <item name="titleTextColor">@android:color/white</item>
-        <!-- Establece el color de los iconos -->
-        <item name="android:colorControlNormal">@android:color/white</item>
+    <!-- Personalización de la barra de herramientas (Toolbar) -->
+    <style name="ToolbarThemeExamen" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/orange</item> <!-- Cambio el fondo de la Toolbar a verde -->
+        <item name="titleTextAppearance">@style/ToolbarTitleTextExamen</item> <!-- Estilo del texto del título -->
     </style>
 
-    <style name="Theme.Ejercicio_Tema_8" parent="Base.Theme.PracticaExamen">
-        <!-- Aplica el nuevo estilo de la Toolbar -->
-        <item name="toolbarStyle">@style/ToolbarStyle</item>
+    <style name="ToolbarTitleTextExamen" parent="TextAppearance.Material3.ActionBar.Title">
+        <item name="android:textColor">@color/white</item> <!-- Color del texto del título (blanco) -->
     </style>
 
-    <!-- Estilo para personalizar la barra de herramientas -->
-    <style name="Widget.PracticaExamen.Toolbar" parent="Widget.Material3.Toolbar">
-        <item name="android:background">@color/orange</item>
+    <style name="Theme.PracticaExamen" parent="Base.Theme.PracticaExamen">
+        <item name="toolbarStyle">@style/ToolbarThemeExamen</item> <!-- Aplico la Toolbar personalizada-->
     </style>
-
-    <style name="Theme.PracticaExamen" parent="Base.Theme.PracticaExamen" />
 </resources>

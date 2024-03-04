@@ -111,8 +111,8 @@ class MainActivity : AppCompatActivity() {
     //Aqui le meto solo lo que vaya a utilizar en el OpenStreetMaps
     intent.putExtra("nombrePais", pais.nombre_pais)
     intent.putExtra("capital", pais.capital)
-    intent.putExtra("comunidadLatitud", pais.latitud)
-    intent.putExtra("comunidadLongitud", pais.longitud)
+    intent.putExtra("paisLatitud", pais.latitud) //Importante que tenga el mismo nombre que en OpenStreetMapasActivity
+    intent.putExtra("paisLongitud", pais.longitud) //Importante que tenga el mismo nombre que en OpenStreetMapasActivity
     startActivity(intent)
     }
 }
